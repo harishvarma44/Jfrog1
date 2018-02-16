@@ -17,19 +17,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-#    <servers>
-#     <server>
-#      <username>admin</username>
-#      <password>admin</password>
-#      <id>central</id>
-#     </server>
-#     <server>
-#      <username>admin</username>
-#      <password>admin</password>
-#      <id>snapshots</id>
-#     </server>
-#    </servers>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
