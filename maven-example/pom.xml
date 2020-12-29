@@ -26,13 +26,18 @@
         </dependency>
     </dependencies>
 
-    <distributionManagement>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>artifactory1-releases</name>
+        <url>http://192.168.161.6:8081/artifactory/jfrog-maven</url>
+    </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>artifactory12-snapshots</name>
-        <url>http://192.168.161.6:8082/artifactory/jfrog-maven/libs-snapshot-local</url>
+        <name>artifactory1-snapshots</name>
+        <url>http://192.168.161.6:8081/artifactory/jfrog-maven</url>
     </snapshotRepository>
-    </distributionManagement>
+</distributionManagement>
 
     <build>
         <pluginManagement>
