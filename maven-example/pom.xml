@@ -30,7 +30,7 @@
     <snapshotRepository>
         <id>snapshots</id>
         <name>artifactory12-snapshots</name>
-        <url>http://192.168.161.6:8081/artifactory/libs-snapshot-local</url>
+        <url>http://192.168.161.6:8082/artifactory/jfrog-maven/libs-snapshot-local</url>
     </snapshotRepository>
     </distributionManagement>
 
