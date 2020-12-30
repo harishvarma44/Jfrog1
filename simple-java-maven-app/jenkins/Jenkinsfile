@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment{
         PATH= "/usr/share/maven/bin:$PATH"
+    }
     stages {
         stage('SCM Checkout') {
             steps{
@@ -32,3 +33,4 @@ pipeline {
             }
         }
     }
+}
