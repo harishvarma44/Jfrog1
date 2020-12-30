@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get maven home path
-                   def mvnHome =  tool name: 'mvn3.3.9', type: 'maven'
+                //   def mvnHome =  tool name: 'mvn3.3.9', type: 'maven'
                    sh "mvn package"
                   }
             }
