@@ -1,6 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jfrog.test</groupId>
   <artifactId>my-app</artifactId>
@@ -28,19 +27,20 @@
             <configuration>
               <deployAtEnd>true</deployAtEnd>
             </configuration>
-        </plugin>
+      </plugin>
     </plugins>
-  </build>
-  <distributionManagement>
-    <repository>
+
+     <distributionManagement>
+      <repository>
         <id>central</id>
         <name>artifactory1-releases</name>
         <url>http://192.168.161.6:8081/artifactory/jfrog-maven</url>
-    </repository>
-    <snapshotRepository>
-      <id>snapshots</id>
-      <name>artifactory1-snapshots</name>
-      <url>http://192.168.161.6:8081/artifactory/jfrog-maven</url>
-    </snapshotRepository>
-</distributionManagement>
+      </repository>
+      <snapshotRepository>
+        <id>snapshots</id>
+        <name>artifactory1-snapshots</name>
+        <url>http://192.168.161.6:8081/artifactory/jfrog-maven</url>
+      </snapshotRepository>
+     </distributionManagement>
+  </build>
 </project>
