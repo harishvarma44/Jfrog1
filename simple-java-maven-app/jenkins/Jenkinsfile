@@ -1,8 +1,11 @@
-node{
+pipeline {
+    agent any
+    stages {
         stage('SCM Checkout') {
-               git 'https://github.com/harishvarma44/Jfrog1.git'
-            }
-
+            steps{
+               git credentialsId: 'git_credentials', url: 'https://github.com/harishvarma44/Jfrog1.git'
+                 }
+            }  
         stage('Build') {
             steps {
                 // Get maven home path
@@ -27,3 +30,4 @@ node{
             }
         }
     }
+}
